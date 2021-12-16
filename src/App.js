@@ -5,6 +5,8 @@ import CustomBtn from './components/CustomBtn';
 import NavBar from './components/NavBar';
 import BookList from './components/bookList'
 import Grid  from './components/Grid';
+import Footer from './components/footer';
+import Header from './components/header';
 
 // Custom components from material UI
 import SecurityIcon from '@material-ui/icons/Security';
@@ -20,6 +22,43 @@ import HttpIcon from '@material-ui/icons/Http';
  * Date: 25th Feb. 2021
  * Website: https://github.com/Tom0901/ReactDesignShowCase/blob/master/src/App.js
  */
+
+function App() {
+  return (
+    <div className="container">
+        <Header/>
+        <BookList/>
+        <Footer/>
+    </div>
+    );
+}
+
+  /*return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+  
+      <div className="App">
+      <ThemeProvider theme={theme}>
+        <Header/>
+        <BookList/>
+        </ThemeProvider>
+    </div>*/
+/*
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -43,36 +82,7 @@ const theme = createMuiTheme({
       lineHeight: '2rem',
     },
   },
-});
-
-function App() {
-  return (
-    <div className="App">
-      <ThemeProvider theme={theme}>
-        <NavBar/>
-        <BookList/>
-        </ThemeProvider>
-    </div>
-    );
-  /*return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );*/
-}
+});*/
 
 /**
  * <Grid icon={<SecurityIcon style={{fill: "#4360A6", height:"125", width:"125"}}/>}  title="Secure" btnTitle="Show me More" />

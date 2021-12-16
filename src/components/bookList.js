@@ -1,3 +1,4 @@
+import { Height } from '@material-ui/icons';
 import React from 'react'
 import book_card from '../data/book_data'
 
@@ -17,12 +18,13 @@ const BookList = () => {
         </div>
     );
     return(
-        <div className="main_content">
+        <div className="book_list">
             <h3>Books</h3>
             {listItems}
         </div>
     )
 }
+
 
 /*export default function BookList() {
     return ( 
