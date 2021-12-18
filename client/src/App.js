@@ -1,12 +1,20 @@
 import logo from './logo.svg';
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import './App.css';
+import React from 'react';
 import CustomBtn from './components/CustomBtn';
 import NavBar from './components/NavBar';
 import BookList from './components/bookList'
 import Grid  from './components/Grid';
 import Footer from './components/footer';
 import Header from './components/header';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link, 
+  Outlet
+} from "react-router-dom";
 
 // Custom components from material UI
 import SecurityIcon from '@material-ui/icons/Security';
@@ -18,15 +26,16 @@ import HttpIcon from '@material-ui/icons/Http';
 
 /**
  * Website theme 
- * Author: Code Creative
- * Date: 25th Feb. 2021
- * Website: https://github.com/Tom0901/ReactDesignShowCase/blob/master/src/App.js
+ * Author: Dev Amit Jha
+ * Date: 18th Oct. 2020
+ * Website: https://www.youtube.com/watch?v=CN0OTAkUD9c&t=730s
  */
 
 function App() {
   return (
     <div className="container">
-        <Header/>
+        <Header>
+        </Header>
         <BookList/>
         <Footer/>
     </div>

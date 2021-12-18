@@ -5,7 +5,7 @@ const book_card = [
         description:"A book on Style",
         price: 25,
         currency:"$",
-        thumb:"./placeholder_book_1.jpg"
+        thumb:"./placeholder_book_1.png"
     }, 
     {
         id:2, 
@@ -13,14 +13,14 @@ const book_card = [
         description:"A book on Style",
         price: 25,
         currency:"$",
-        thumb:"./placeholder_book_1.jpg"
+        thumb:"./placeholder_book_1.png"
     },{
         id:3, 
         book_name:"Smell Good",
         description:"A book on Style",
         price: 25,
         currency:"$",
-        thumb:"./placeholder_book_1.jpg"
+        thumb:"./placeholder_book_1.png"
     },
     {
         id:4, 
@@ -28,7 +28,7 @@ const book_card = [
         description:"Good book",
         price: 25,
         currency:"$",
-        thumb:"./placeholder_book_1.jpg"
+        thumb:"./placeholder_book_1.png"
     }, 
     {
         id:5, 
@@ -36,14 +36,14 @@ const book_card = [
         description:"Conversation book",
         price: 25,
         currency:"$",
-        thumb:"./placeholder_book_1.jpg"
+        thumb:"./placeholder_book_1.png"
     },{
         id:6, 
         book_name:"Smell Good",
         description:"A book on Style",
         price: 25,
         currency:"$",
-        thumb:"./placeholder_book_1.jpg"
+        thumb:"./placeholder_book_1.png"
     },
 ]
 

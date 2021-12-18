@@ -19,7 +19,6 @@ const BookList = () => {
     );
     return(
         <div className="book_list">
-            <h3>Books</h3>
             {listItems}
         </div>
     )
