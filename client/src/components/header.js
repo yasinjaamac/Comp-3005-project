@@ -10,6 +10,10 @@ import {
     Outlet
 } from "react-router-dom";
 
+
+// How to transition from one page to the 
+// other 
+
 export default function Header(){
     return(
         <Router>
@@ -18,7 +22,7 @@ export default function Header(){
         <ul>
             <li>Home</li>
             <li>Books</li>
-            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/about" className="destination">About Us</Link></li>
             <li>Contact</li>
         </ul>
         <div className="search">
@@ -26,12 +30,6 @@ export default function Header(){
             <i className="fa fa-shopping-basket"></i>
         </div>
         </nav>
-
-        <Routes>
-        <Route path="/about">
-            <AboutUs/>
-        </Route>
-        </Routes>
         </Router>
     )
 }

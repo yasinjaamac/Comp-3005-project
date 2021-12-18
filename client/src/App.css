@@ -66,7 +66,7 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li {
+.destination,nav ul li {
   font-size: 14px;
   margin-left: 15px;
   padding: 10px;

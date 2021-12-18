@@ -8,6 +8,8 @@ import BookList from './components/bookList'
 import Grid  from './components/Grid';
 import Footer from './components/footer';
 import Header from './components/header';
+import AboutUs from './components/aboutUs';
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -24,6 +26,7 @@ import ImportExportIcon from '@material-ui/icons/ImportExport';
 import ComputerIcon from '@material-ui/icons/Computer';
 import HttpIcon from '@material-ui/icons/Http';
 
+// How do i remove a page make an other come to the picture ?
 /**
  * Website theme 
  * Author: Dev Amit Jha
@@ -37,7 +40,7 @@ function App() {
         <Header>
         </Header>
         <BookList/>
-        <Footer/>
+        <Footer/> 
     </div>
     );
 }
