@@ -16,7 +16,9 @@ import {Helmet} from 'react-helmet';
 ReactDOM.render(
   <React.StrictMode >
     <div className="container">
-    
+    <Helmet>
+                <style>{'body { background-color: #272b34; }'}</style>
+            </Helmet>
     <Header/>
     <Router>
         <Routes>
@@ -44,7 +46,7 @@ ReactDOM.render(
     </Router> 
     
     <Helmet>
-                <style>{'body { background-color: red; }'}</style>
+                <style>{'body { background-color: #272b34; }'}</style>
             </Helmet>*/
 
 serviceWorker.unregister();
