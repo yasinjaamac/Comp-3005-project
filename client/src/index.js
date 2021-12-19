@@ -16,6 +16,7 @@ import LoginButton from './components/LoginButton';
 import LogoutButton from './components/LogoutButton';
 import UserProfile from './components/userProfile';
 import JSONPretty from 'react-json-pretty';
+import OwnerProfile from './components/ownerProfile';
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
@@ -23,6 +24,7 @@ const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 //<App />
 //React.StrictMode.  
 //Que faire now... ?
+
 ReactDOM.render(
   <Auth0Provider
   domain={domain}
@@ -34,20 +36,18 @@ ReactDOM.render(
     </Helmet>
     
     
-    <div>
 
-    </div>
-
+    <Header/>
     <>
     <LoginButton/>
     <LogoutButton/>
-    <UserProfile/>
+    <OwnerProfile/>
     </>
 
-    <Header/>
     <Router>
         <Routes>
-        <Route path="/" element={<BookList/>}/>
+        <Route path="/" element={<OwnerProfile/>}/>  
+        <Route path="/list" element={<BookList/>}/>
         <Route path="/about" element={<AboutUs/>}>
         </Route>
         </Routes>
@@ -59,6 +59,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+// <UserProfile/> <Header/>
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
