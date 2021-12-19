@@ -26,7 +26,8 @@ export default function Header(){
         <div className="logo">Library.</div>
         <ul>
             <li><Link to="/profile" className="destination">Home</Link></li>
-            <li><Link to="/list" className="destination">Books</Link></li>
+            <li><Link to="/booklist" className="destination">Books</Link></li>
+            <li><Link to="/addbook" className="destination">Add a book</Link></li>
         </ul>
         <div className="search">
             <i className="fa fa-search"></i>

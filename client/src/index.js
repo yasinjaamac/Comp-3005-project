@@ -24,7 +24,12 @@ const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 //<App />
 //React.StrictMode.  
 //Que faire now... ?
+// How to add and remove : 
 
+//Have a add button, on the option
+// separate the index.js screen to have a look at the 2 stuff 
+//   
+//Remove button
 ReactDOM.render(
   <Auth0Provider
   domain={domain}
@@ -35,8 +40,7 @@ ReactDOM.render(
                 <style>{'body { background-color: #272b34; }'}</style>
     </Helmet>
     
-    
-
+  
     <Header/>
     <>
     <LoginButton/>
@@ -47,7 +51,7 @@ ReactDOM.render(
     <Router>
         <Routes>
         <Route path="/" element={<OwnerProfile/>}/>  
-        <Route path="/list" element={<BookList/>}/>
+        <Route path="/booklist" element={<BookList/>}/>
         <Route path="/about" element={<AboutUs/>}>
         </Route>
         </Routes>
