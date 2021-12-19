@@ -11,14 +11,39 @@ import AboutUs from './components/aboutUs'
 import Header from './components/header';
 import BookList from './components/bookList';
 import {Helmet} from 'react-helmet';
+import {Auth0Provider} from '@auth0/auth0-react'
+import LoginButton from './components/LoginButton';
+import LogoutButton from './components/LogoutButton';
+import UserProfile from './components/userProfile';
+import JSONPretty from 'react-json-pretty';
+
+const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
 //<App />
+//React.StrictMode.  
+//Que faire now... ?
 ReactDOM.render(
-  <React.StrictMode >
+  <Auth0Provider
+  domain={domain}
+  clientId={clientId}
+  redirectUri={window.location.origin}>
     <div className="container">
     <Helmet>
                 <style>{'body { background-color: #272b34; }'}</style>
-            </Helmet>
+    </Helmet>
+    
+    
+    <div>
+
+    </div>
+
+    <>
+    <LoginButton/>
+    <LogoutButton/>
+    <UserProfile/>
+    </>
+
     <Header/>
     <Router>
         <Routes>
@@ -30,7 +55,7 @@ ReactDOM.render(
         </Router>
     </div>
     
-  </React.StrictMode>,
+  </Auth0Provider>,
   document.getElementById('root')
 );
 
@@ -38,6 +63,7 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals(); <Route exact path="/" component={Homepage}/>
+
 /**
     <Router>
        <Routes>
@@ -47,6 +73,7 @@ ReactDOM.render(
     
     <Helmet>
                 <style>{'body { background-color: #272b34; }'}</style>
-            </Helmet>*/
+            </Helmet>
+  */
 
 serviceWorker.unregister();
