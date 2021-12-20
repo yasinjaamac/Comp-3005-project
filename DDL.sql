@@ -156,9 +156,3 @@ CREATE TABLE PublisherMarkup(
    FOREIGN KEY (Publisher_id)
    REFERENCES Publisher(Publisher_id)
  )
-
-
-
-
-
- 
