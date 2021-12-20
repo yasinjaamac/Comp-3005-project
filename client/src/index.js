@@ -30,6 +30,27 @@ const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 // separate the index.js screen to have a look at the 2 stuff 
 //   
 //Remove button
+
+const express = require('express')
+const app = express()
+
+const createMerchant = (body) => {
+  return new Promise(function(resolve, reject) {
+    
+    // What should I do now ? 
+    // How should I 
+    const {bookname, isbn,genre,numberofpages,price,publishier_id} = body
+    
+    pool.query('INSERT INTO book (bookname, isbn,genre,numberofpages,price,publishier_id) VALUES ($1,$2,$3,$4,$5,$6) RETURNING *', [bookname, isbn,genre,numberofpages,price,publishier_id], (error, results) => {
+      if (error) {
+        reject(error)
+      }
+      resolve(`A new book has been added: ${results.rows[0]}`)
+    })
+  })
+}
+
+
 ReactDOM.render(
   <Auth0Provider
   domain={domain}
