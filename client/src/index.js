@@ -31,6 +31,7 @@ const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 //   
 //Remove button
 
+/*
 const express = require('express')
 const app = express()
 
@@ -48,8 +49,7 @@ const createMerchant = (body) => {
       resolve(`A new book has been added: ${results.rows[0]}`)
     })
   })
-}
-
+}*/
 
 ReactDOM.render(
   <Auth0Provider
